@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="hello.css">
+    <title>My HTML Page</title>
+</head>
+<body>
+    <div id="main" class="centered">
+    <div id="heading" class="heading">
+    <h1>User Registartion Page</h1>
+    </div>
+    <form id="form-registration">
+    <div id="input1" class="input">
+        <label for="first-name">First Name: </label>
+        <input type="text" id="first-name" pattern="[A-Za-z]+" title="Please enter a valid first name" required>
+    </div>
+    <div id="input2" class="input">
+        <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" pattern="[A-Za-z]+" title="Please enter a valid last name" required>
+    </div>
+    <div id="email" class="input">
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email-input" title="Please enter a valid email address" required>
+    </div>
+    <div class="button">
+        <button id="register-button" onclick="registerUser()">Register</button>
+    </div>
+    </form>
+    </div>
+    <script src="hello.js"></script>
+</body>
+</html>
